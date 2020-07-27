@@ -1,0 +1,270 @@
+@import "_fonts.scss";
+@import "_button.scss";
+@import "slick-theme.scss";
+@import "slick.scss";
+
+
+html {
+  -webkit-text-size-adjust: 100%; /* 2 */
+  overflow-x: hidden;
+  font-family: "Roboto-Regular";
+  color: #282B4F;
+}
+
+hr {
+  box-sizing: content-box; /* 1 */
+  //height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+  //overflow: hidden;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+div {
+  box-sizing: border-box;
+}
+
+main {
+  display: block;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
+p {
+  font-family: "Roboto Light";
+  font-size: 1.875rem;
+  color: #282B4F;
+  margin: 15px 0;
+}
+
+h1 {
+  font-family: "Scada Regular";
+  font-size: 3rem;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #282B4F;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Scada Regular";
+  font-size: 2.25rem;
+  line-height: 45px;
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #282B4F;
+}
+
+h3 {
+  font-family: "Scada Regular";
+  font-size: 2rem;
+  line-height: 39px;
+  margin: 0;
+  font-weight: normal;
+  color: #282B4F;
+}
+
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1920px;
+}
+
+a {
+  font-family: "Roboto Light";
+  font-size: 1.5rem;
+  color: #282B4F;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.header {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  .container_header {
+    width: 100%;
+
+    .background_img {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      z-index: -5;
+    }
+
+    .centered {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      right: -50%;
+      bottom: -50%;
+      margin: auto;
+    }
+
+  }
+
+  .padded-container {
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50%;
+    overflow: hidden;
+  }
+
+  .top_background {
+
+    position: relative;
+    .wrapper {
+      width: 100%;
+      z-index: 5;
+
+      .background_img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        z-index: -2;
+      }
+
+      .centered {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        right: -50%;
+        bottom: -50%;
+        margin: auto;
+      }
+    }
+  }
+
+}

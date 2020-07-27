@@ -1,0 +1,1854 @@
+/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
+html, body {
+    height: 100%
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+p {
+    text-align: left;
+    font-family: "Roboto Light";
+    font-size: 1.5rem;
+    line-height: 27px;
+    color: #282B4F;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden], template {
+    display: none
+}
+
+a {
+    background-color: transparent;
+    text-decoration: underline;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    color: #282B4F;
+}
+
+a:active, a:hover {
+    outline: 0
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled], html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: bold
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td, th {
+    padding: 0
+}
+
+@font-face {
+    font-family: "Mart";
+    src: url("/../fonts/Mart.otf") format("otf");
+    src: url("/../fonts/Mart.ttf") format("ttf");
+    src: url("/../fonts/Mart.woff2") format("woff2"), url("../fonts/Mart.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Mart 900";
+    src: url("../fonts/Mart Extra Bold.otf") format("otf");
+    src: url("../fonts/mart_extra_bold-webfont.woff2") format("woff2"), url("../fonts/mart_extra_bold-webfont.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Mart 700";
+    src: url("../fonts/Mart-Bold.otf") format("otf");
+    src: url("../fonts/Mart-Bold.ttf") format("ttf");
+    src: url("../fonts/Mart-Bold.woff2") format("woff2"), url("../fonts/Mart-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Mart Book', sans-serif;
+    src: url("../fonts/Mart Book.otf") format("otf"), url("../fonts/mart_book-webfont.woff2") format("woff2"), url("../fonts/mart_book-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Mart Fat";
+    src: url("../fonts/Mart-Fat.otf") format("otf");
+    src: url("../fonts/Mart-Fat.ttf") format("ttf");
+    src: url("../fonts/Mart-Fat.woff2") format("woff2"), url("../fonts/Mart-Fat.woff") format("woff");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Mart Heavy";
+    src: url("../fonts/Mart Heavy.otf") format("otf");
+    src: url("../fonts/mart_heavy-webfont.woff2") format("woff2"), url("../fonts/mart_heavy-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Mart Light";
+    src: url("../fonts/Mart-Light.otf") format("otf");
+    src: url("../fonts/Mart-Light.ttf") format("ttf");
+    src: url("../fonts/Mart-Light.woff2") format("woff2"), url("../fonts/Mart-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Mart SemiBold";
+    src: url("../fonts/Mart Semi bold.otf") format("otf");
+    src: url("../fonts/mart_semi_bold-webfont.woff2") format("woff2"), url("../fonts/mart_semi_bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Mart Ultra";
+    src: url("../fonts/Mart Ultra.otf") format("otf");
+    src: url("../fonts/mart_ultra-webfont.woff2") format("woff2"), url("../fonts/mart_ultra.woff") format("woff");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("ttf");
+    src: url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Roboto 900";
+    src: url("../fonts/Roboto-Black.ttf") format("ttf");
+    src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/Roboto-Light.ttf") format("ttf");
+    src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Roboto Black";
+    src: url("../fonts/Roboto-Black.ttf") format("ttf");
+    src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../fonts/Roboto-Medium.ttf") format("ttf");
+    src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+
+html {
+    min-width: 320px
+}
+
+h1 {
+    font-family: "Mart Light";
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 64px;
+    text-align: center;
+    color: #282B4F;
+}
+
+h2 {
+    font-family: "Mart Light";
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 64px;
+    padding-bottom: 44px;
+    text-align: center;
+    margin: 0;
+    color: #282B4F;
+}
+
+h3 {
+    font-family: "Mart Light";
+    font-weight: 500;
+    font-size: 2.625rem;
+    line-height: 42px;
+    text-align: left;
+    color: #282B4F;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    h1 {
+        font-size: 2.375rem;
+        padding-bottom: 10px;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 2.375rem;
+        padding-bottom: 20px;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+        line-height: 33px;
+        padding: 10px 0 5px 0;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    p {
+        font-size: 1.0625rem;
+        color: #282B4F;
+    }
+}
+
+b, strong {
+    font-family: "Roboto Medium";
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    b, strong {
+        font-size: 1.0625rem;
+    }
+}
+
+ul {
+    padding: 12px 0 0 100px;
+    margin: 0;
+}
+
+li {
+    text-align: left;
+    font-family: "Roboto Light";
+    font-size: 1.5rem;
+    line-height: 33px;
+    margin: 0;
+    color: #282B4F;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    ul {
+        padding-left: 30px;
+    }
+
+    li {
+        font-size: 1.0625rem;
+    }
+}
+
+section {
+    padding: 70px 0 80px 0
+}
+
+.topzerobottom50 {
+    padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .topzerobottom50 {
+        padding-bottom: 20px;
+    }
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0 auto
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    section {
+        padding: 0;
+    }
+
+    .container {
+        padding: 20px 15px 0 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+.container2 {
+    max-width: 1270px;
+    margin: 0 auto
+}
+
+/*@media only screen and (min-width: 320px) and (max-width: 767px) {*/
+/*    .container2 {*/
+/*        padding: 0px 15px;*/
+/*    }*/
+/*}*/
+
+.wrap {
+    margin: 0 auto
+}
+
+.is-hidden {
+    display: none !important
+}
+
+.visually-hidden {
+    text-indent: -9999px;
+    font-size: 0
+}
+
+body {
+    overflow-x: hidden
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.icon-facebook {
+    background-image: url(../images/sprite.png);
+    background-position: -100px -86px;
+    width: 48px;
+    height: 48px
+}
+
+.icon-facebook_white {
+    background-image: url(../images/sprite.png);
+    background-position: -200px -96px;
+    width: 28px;
+    height: 28px
+}
+
+.icon-instagram {
+    background-image: url(../images/sprite.png);
+    background-position: -148px -86px;
+    width: 48px;
+    height: 48px
+}
+
+.icon-instagram_white {
+    background-image: url(../images/sprite.png);
+    background-position: -200px -124px;
+    width: 28px;
+    height: 28px
+}
+
+.icon-mail_ru_white {
+    background-image: url(../images/sprite.png);
+    background-position: -100px -134px;
+    width: 28px;
+    height: 28px
+}
+
+.icon-twitter {
+    background-image: url(../images/sprite.png);
+    background-position: -200px 0px;
+    width: 48px;
+    height: 48px
+}
+
+.icon-twitter_white {
+    background-image: url(../images/sprite.png);
+    background-position: -128px -134px;
+    width: 28px;
+    height: 28px
+}
+
+.icon-viber_white {
+    background-image: url(../images/sprite.png);
+    background-position: -156px -134px;
+    width: 28px;
+    height: 28px
+}
+
+.icon-vk {
+    background-image: url(../images/sprite.png);
+    background-position: -200px -48px;
+    width: 48px;
+    height: 48px
+}
+
+.icon-vk_white {
+    background-image: url(../images/sprite.png);
+    background-position: 0px -172px;
+    width: 28px;
+    height: 28px
+}
+
+.icon-hands {
+    background-image: url(../images/sprite.png);
+    background-position: 0px 0px;
+    width: 100px;
+    height: 86px
+}
+
+.icon-hummer {
+    background-image: url(../images/sprite.png);
+    background-position: -100px 0px;
+    width: 100px;
+    height: 86px
+}
+
+.icon-piple {
+    background-image: url(../images/sprite.png);
+    background-position: 0px -86px;
+    width: 100px;
+    height: 86px
+}
+
+.icon-star {
+    background-image: url(../images/sprite.png);
+    background-position: -54px -172px;
+    width: 25px;
+    height: 25px
+}
+
+.icon-star_white {
+    background-image: url(../images/sprite.png);
+    background-position: -28px -172px;
+    width: 26px;
+    height: 25px
+}
+
+.button {
+    font-family: "Mart Fat";
+    font-size: 0.9375rem;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff
+}
+
+.button--orange {
+    width: 200px;
+    height: 44px;
+    background: #F6A278;
+    transition: 0.3s;
+    padding: 12px 0
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+    .button {
+        padding: 13px 0
+    }
+
+    .button--orange {
+        display: none
+    }
+}
+
+.button--blue {
+    width: 290px;
+    height: 44px;
+    background: #667088;
+    transition: 0.3s;
+    padding: 12px 0
+}
+
+.button--red {
+    background: #de2b24;
+    transition: 0.3s
+}
+
+.button--red:hover {
+    background: #e34943
+}
+
+.button--yellow {
+    background: #f8cd53
+}
+
+.button--yellow--hover {
+    background: #f9d775
+}
+
+.button--text-uppercase {
+    text-transform: uppercase
+}
+
+.header__top {
+    background-color: #D8DBE3
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1280px) {
+    .logo__picture {
+        width: 200px;
+    }
+}
+
+.header__bottom_mobile_phone {
+    display: none;
+}
+
+.back__call {
+    display: none;
+}
+
+.logo__picture__mobail {
+    display: none;
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 107px;
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .header__bottom_mobile_phone {
+        font-size: 0.875rem;
+    }
+
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    .header__bottom_mobile_phone {
+        font-size: 1.375rem;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+
+    header .container {
+        padding: 0;
+    }
+
+    .header__bottom {
+        background: linear-gradient(180deg, #D8DBE3 -.37%, #fff 100%);
+    }
+
+    .header__bottom {
+        display: block;
+        position: sticky;
+        top: 0;
+        height: 60px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo__picture__mobail {
+        display: block;
+        padding-top: 4px;
+    }
+
+    .header__bottom_mobile_phone {
+        display: block;
+        padding: 0 12px;
+        font-family: "Roboto Medium";
+        color: #282B4F;
+    }
+
+    .back__call {
+        display: flex;
+    }
+
+    .back__call a {
+        font-family: "Mart Fat";
+        font-size: 0.75rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 17px;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    .back__call {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 105px;
+        height: 60px;
+        background-color: #F6A278
+    }
+}
+
+.mobile_container {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .header__bottom .button {
+        margin-right: 15px
+    }
+}
+
+.contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 7px 6px;
+    transition: 0.3s
+}
+
+.contacts .contact__text {
+    font-size: 0.9375rem;
+    font-family: "Roboto";
+    padding-left: 8px;
+    color: #282B4F
+}
+
+.contacts:hover {
+    color: #757575
+}
+
+@media only screen and (max-width: 1023px) {
+    .contacts {
+        display: none
+    }
+
+    .mobile_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0 60px 0 20px;
+    }
+}
+
+.contact, .contact__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 18px;
+    text-decoration: none
+}
+
+.contact__block {
+    width: 151px
+}
+
+
+/*---------------Menu-----------------*/
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+    nav ul {
+        position: absolute;
+        background-color: #1B1D36;
+        width: 100%;
+        opacity: 90%;
+    }
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+    font-family: Mart;
+    font-size: 1.3125rem;
+    padding-right: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 10px 0 10px 5px;
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1170px) {
+    nav ul li {
+        font-size: 1rem;
+        padding: 10px 0 10px 3px;
+    }
+}
+
+nav ul li a,
+nav ul li a:visited {
+    display: inline-block;
+    color: #282B4F;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0 8px;
+}
+
+nav ul li a:hover:after,
+nav ul li a:focus:after {
+    width: 100%;
+}
+
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: ' ▾';
+}
+
+nav ul li ul li {
+    min-width: 190px;
+}
+
+nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 60px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .nav-mobile {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0;
+        background: #1B1D36;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li a,
+    nav ul li a:visited {
+        display: inline-block;
+        color: #FFFFFF;
+        padding: 15px;
+        line-height: 20px;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        display: block;
+        /*padding: 0 20px;*/
+        /*line-height: 70px;*/
+        /*background: #262626;*/
+        /*color: #ffffff;*/
+        /*text-decoration: none;*/
+    }
+
+    .nav-dropdown {
+        position: static;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+    .div_link_menu {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1023px) {
+    .nav-list {
+        display: block !important;
+    }
+}
+
+#nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 24px;
+    background: #1B1D36;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+
+/*----------------------------End Menu-------------------------*/
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 500px;
+    min-height: 300px;
+    padding: 49px 0;
+    color: #fff;
+    background: #1B1D36 url("../images/hero-bg.png") center/cover no-repeat;
+}
+
+.hero .hero--2 {
+    padding-top: 24px
+}
+
+.hero .hero--3 {
+    padding-top: 24px
+}
+
+.hero .button {
+    margin-top: 32px
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .hero {
+        height: 300px;
+    }
+
+    .hero .hero--1 {
+        width: 226px
+    }
+
+    .hero .hero--2 {
+        width: 314px
+    }
+
+    .hero .hero--3 {
+        width: 204px
+    }
+
+    .hero .button--blue {
+        display: none
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .about7 {
+        padding-top: 0;
+        padding-bottom: 0px;
+    }
+
+    .about7 h1 {
+        padding: 0px;
+        margin-top: 0;
+    }
+}
+
+.about7 .container {
+    max-width: 1270px;
+    margin: 0 auto
+}
+
+.about7 .container .button--blue {
+    display: none
+}
+
+.about7 .container .about__text--hidden {
+    display: none
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .about7 .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 15px 0 15px
+    }
+
+    .about7 .container .button--blue {
+        display: block;
+        margin: 0 auto;
+        letter-spacing: 1px;
+    }
+
+    .about7 .container .about__text {
+        display: none
+    }
+
+    .about7 .container .about__text--hidden {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about7 .container .about__text--hidden .about__text--start {
+        margin-top: 0;
+    }
+
+    #about__text--continuation p {
+        margin-top: 0;
+        font-family: "Roboto Light";
+        font-size: 1.0625rem;
+    }
+
+    .about7 .container .about__text--hidden .button--continuation {
+        margin-top: 10px;
+        background: #D8DBE3;
+        color: #282B4F
+    }
+
+    .about7 .container .about__text--hidden #about__text__continuation {
+        display: none
+    }
+
+    .about7 .container .about__text--hidden--visible {
+        display: none
+    }
+
+    .about7 .container .title {
+        padding-bottom: 0;
+        margin: 0
+    }
+}
+
+
+.about h2 {
+    padding-bottom: 22px
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .about {
+        padding-top: 0;
+        padding-bottom: 36px;
+    }
+
+    .about h2 {
+        padding: 26px 0 10px 0
+    }
+}
+
+
+.about .container .button--blue {
+    display: none
+}
+
+.about .container .about__text--hidden {
+    display: none
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .about .container {
+        padding: 20px 15px 0 15px
+    }
+
+    .about .container .button--blue {
+        display: block;
+        margin: 0 auto;
+        letter-spacing: 1px;
+    }
+
+    .about .container .title__header {
+        padding-top: 26px;
+        font-family: "Mart Book";
+        font-size: 1.875rem
+    }
+
+    .about .container .about__text {
+        display: none
+    }
+
+    .about .container .about__text--hidden {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .container .about__text--hidden .about__text--start {
+        margin-top: 0;
+    }
+
+    #about__text--continuation p {
+        margin-top: 0;
+        font-family: "Roboto Light";
+        font-size: 1.0625rem;
+    }
+
+    .about .container .about__text--hidden .button--continuation {
+        margin-top: 20px;
+        background: #D8DBE3;
+        color: #282B4F
+    }
+
+    .about .container .about__text--hidden #about__text__continuation {
+        display: none
+    }
+
+    .about .container .about__text--hidden--visible {
+        display: none
+    }
+
+    .about .container .title {
+        padding-bottom: 0;
+        margin: 0
+    }
+}
+
+.approach {
+    background-color: #E7E9EE
+}
+
+.approach__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.approach__wrapper .square {
+    width: 401px;
+    height: 447px;
+    border-radius: 30px;
+    box-shadow: 0 4px 31px rgba(0, 0, 0, 0.15);
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    padding: 48px
+}
+
+
+.approach__wrapper .square .title__approach {
+    font-family: "Mart";
+    font-weight: 700;
+    font-size: 2.125rem;
+    letter-spacing: 120%;
+    padding-top: 32px;
+    line-height: 35px;
+    color: #282B4F;
+}
+
+.approach__wrapper .square .title__text {
+    font-family: "Roboto";
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 24px 0
+}
+
+.approach__wrapper .square .title__details {
+    font-family: "Roboto Black";
+    font-size: 1.25rem;
+    text-decoration: none
+}
+
+.approach__wrapper .square__pinky {
+    background: linear-gradient(233.96deg, #FFB089 -.37%, #fff 100%)
+}
+
+.approach__wrapper .square__pinky .title__details {
+    color: #F6A278
+}
+
+.approach__wrapper .square__blue {
+    background: linear-gradient(233.62deg, #1B1D36 -.37%, #667088 100%)
+}
+
+.approach__wrapper .square__blue .title__approach {
+    color: #FFFFFF
+}
+
+.approach__wrapper .square__blue .title__details {
+    color: #FFFFFF
+}
+
+.approach__wrapper .square__blue .title__text {
+    color: #ffffff
+}
+
+.approach__wrapper .square__white {
+    background: #FFFFFF
+}
+
+.approach__wrapper .square__white .title__details {
+    color: #F6A278
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .approach {
+        padding: 26px 0 30px 0;
+    }
+
+    .approach h2 {
+        padding-bottom: 24px
+    }
+
+    .approach .container {
+        padding: 0;
+    }
+
+    .approach .approach__wrapper {
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .approach .approach__wrapper .square {
+        width: 345px;
+        height: 360px;
+        margin-bottom: 30px;
+        padding: 6px 30px
+    }
+
+    .approach .approach__wrapper .square .title__approach {
+        font-family: "Mart Light";
+        font-size: 1.875rem;
+        line-height: 35px;
+        padding: 16px 0 0;
+        color: #282B4F;
+    }
+
+    .approach .approach__wrapper .square__blue .title__approach {
+        color: #FFFFFF;
+    }
+
+    .approach .approach__wrapper .square .title__text {
+        font-family: "Roboto";
+        font-size: 1.0625rem;
+        padding: 16px 0 8px 0
+    }
+
+    .approach .approach__wrapper .square .title__details {
+        font-family: "Roboto Black";
+        font-size: 1.25rem;
+        line-height: 27px
+    }
+
+    .approach .approach__wrapper .square:last-child {
+        margin-bottom: 0
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .approach__wrapper {
+        flex-direction: column;
+    }
+
+    .approach__wrapper .square {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .square_wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .approach__wrapper .square .title__approach {
+        padding: 10px 250px 0 37px;
+    }
+
+    .approach__wrapper .square .title__text {
+        line-height: 27px;
+    }
+}
+
+.publication {
+    color: #282B4F
+}
+
+.publication .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.publication .container .title {
+    margin-bottom: 14px
+}
+
+.publication .publication__wrap {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 24px;
+}
+
+.publication .publication__wrap .title__text {
+    font-family: "Mart Light";
+    font-size: 1.5rem;
+    padding: 0 0 8px 0;
+    margin: 0
+}
+
+/*@media only screen and (min-width: 320px) and (max-width: 767px) {*/
+/*    .publication .publication__wrap .title__text {*/
+/*        font-family: "Mart Light";*/
+/*        font-size: 1.125rem;*/
+/*    }*/
+/*}*/
+
+.publication .publication__wrap .publication__text {
+    padding: 8px 0;
+    margin: 0;
+    text-transform: none
+}
+
+.publication .publication__wrap .publication__wrap--title {
+    font-size: 2.125rem;
+    font-family: "Mart";
+    padding: 0;
+    margin: 0;
+    text-transform: none
+}
+
+.publication .publication__wrap .title__details {
+    font-family: "Roboto Black";
+    font-size: 1.5rem;
+    line-height: 27px;
+    font-weight: bold;
+    color: #F6A278;
+    text-transform: none;
+    text-decoration: none
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .publication {
+        padding: 0
+    }
+
+    .publication .container {
+        padding: 36px 15px
+    }
+
+    .publication h2 {
+        padding-bottom: 24px;
+    }
+
+    .publication .title__text {
+        font-family: "Mart Light";
+        font-size: 1.125rem;
+        padding-top: 25px
+    }
+
+    .publication .publication__wrap--title {
+        font-family: "Mart Book";
+        font-size: 1.875rem
+    }
+
+    .publication .publication__wrap .title__text {
+        font-family: "Mart Light";
+        font-size: 1.125rem;
+    }
+
+    .publication .publication__wrap .publication__wrap--title {
+        font-family: "Mart Light";
+        font-size: 1.875rem;
+        line-height: normal;
+    }
+
+    .publication .title__details {
+        font-size: 1.25rem;
+        font-family: "Roboto Medium" !important
+    }
+
+    .publication .button--orange {
+        display: inline-block;
+        width: 290px
+    }
+}
+
+.reviews {
+    background-color: #E7E9EE;
+    padding-bottom: 36px;
+}
+
+.reviews h2 {
+    padding: 0;
+}
+
+.reviews .title__header {
+    font-size: 2.875rem
+}
+
+.reviews__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.reviews__wrapper .square {
+    width: 388px;
+    height: 580px;
+    border-radius: 30px;
+    box-shadow: 0 4px 31px rgba(0, 0, 0, 0.15);
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    padding: 40px 35px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 44px 10px;
+}
+
+.reviews__wrapper .square .reviews__picture {
+    width: 149px;
+    height: 149px;
+    margin: 0 auto;
+}
+
+.reviews__wrapper .square .title__text {
+    font-family: "Roboto";
+    font-size: 1.25rem;
+    line-height: 27px;
+    margin: 0;
+    padding: 30px 0 40px 0;
+    text-align: center;
+    color: #282B4F;
+}
+
+.reviews__wrapper .square .title__details {
+    font-family: "Roboto";
+    font-size: 1.25rem;
+    line-height: 27px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    color: #282B4F;
+}
+
+.reviews__wrapper .square .title__details--color {
+    font-family: "Roboto Medium";
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 1.25rem;
+    color: #F6A278;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+.reviews__wrapper .square__star {
+    width: 147px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .reviews {
+        padding-top: 24px
+    }
+
+    .reviews h2 {
+        margin: 0 0 12px 0;
+        padding-bottom: 0px;
+
+    }
+
+    .reviews__img {
+        width: 285px;
+    }
+
+    .reviews .square {
+        width: 325px;
+        height: 580px;
+        padding: 40px 12px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .reviews__wrapper .square .title__text {
+        font-size: 1.0625rem;
+    }
+
+    .reviews__wrapper .square {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .reviews__wrapper .square {
+        width: 400px;
+        margin-left: 15px;
+    }
+
+    .slick-list:last-child {
+        margin-left: auto;
+    }
+}
+
+.partners {
+    padding-bottom: 70px
+}
+
+.partners__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.partners__wrapper .square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 401px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 0 4px 31px rgba(0, 0, 0, 0.15);
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    padding: 53px 53px;
+    background: linear-gradient(230.88deg, #E7E9EE -.37%, #fff 100%)
+}
+
+.partners__wrapper .square .title__approach {
+    padding-top: 32px
+}
+
+.partners__wrapper .square .title__text {
+    margin: 0;
+    padding: 24px 0
+}
+
+.partners__wrapper .square .partners__text {
+    font-family: "Mart Light";
+    font-size: 2.125rem;
+    line-height: 33px;
+    margin: 0;
+    color: #282B4F;
+}
+
+.partners__wrapper .square img {
+    padding: 0
+}
+
+.partners__wrapper .square .reviews__picture--3 {
+    width: 141px;
+    height: auto
+}
+
+.partners__wrapper .square .partners__title {
+    font-family: "Roboto";
+    font-size: 1.25rem;
+    line-height: 27px;
+    text-align: center;
+    color: #282B4F;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .partners {
+        padding: 16px 0 32px 0
+    }
+
+    .partners h2 {
+        padding: 0;
+        line-height: normal;
+    }
+
+    .partners .partners__wrapper {
+        flex-direction: column
+    }
+
+    .partners .square {
+        width: 345px;
+        height: 321px;
+        margin-top: 30px;
+        padding: 30px
+    }
+
+    .partners .square .partners__text {
+        font-family: "Mart Light";
+        font-size: 1.875rem
+    }
+
+    .partners .square .partners__title {
+        font-family: "Roboto";
+        font-size: 1.25rem
+    }
+
+    .partners .square:first-child {
+        padding-top: 20px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .partners {
+        padding-bottom: 0;
+    }
+    .partners__wrapper {
+        flex-direction: column;
+    }
+
+    .partners__wrapper .square {
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .partners__wrapper .square img {
+        padding: 24px 0;
+    }
+
+}
+
+.footer {
+    padding-bottom: 80px
+}
+
+.footer .map__responsive {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 500px;
+    height: 0;
+    margin-bottom: 12px;
+
+}
+
+.footer .map__responsive iframe {
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: absolute
+}
+
+.footer .footer__bottom .title_footer {
+    padding-top: 70px
+}
+
+.footer .footer__bottom .container__footer {
+    display: flex;
+    justify-content: space-between
+}
+
+.footer .footer__bottom .footer__bottom--left {
+    flex-basis: 390px
+}
+
+.footer .footer__bottom .footer__bottom--left .title__header--bottom--left {
+    font-family: "Mart";
+    font-size: 2.25rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: #282B4F;
+}
+
+.footer .footer__bottom .footer__bottom--left .footer__bottom__text {
+    font-family: "Roboto Light";
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 16px
+}
+
+.footer .footer__bottom .footer__bottom--left .footer__social {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start
+}
+
+.footer .footer__bottom .footer__bottom--left .footer__social .icon {
+    margin-right: 12px
+}
+
+.footer .footer__bottom .footer__bottom--right {
+    flex-basis: 700px
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .footer {
+        padding: 0
+    }
+
+    .footer .container h2 {
+        padding-bottom: 20px
+    }
+
+    .footer .footer__bottom .container .title {
+        display: none
+    }
+
+    .footer .footer__bottom .container .container__footer {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .footer .footer__bottom .container .container__footer .footer__bottom--right {
+        flex-basis: auto;
+        padding-top: 30px
+    }
+
+    .footer .footer__bottom .container .container__footer .footer__bottom--left {
+        flex-basis: auto
+    }
+
+    .footer .footer__bottom .container .container__footer .footer__bottom--left .title__header--bottom--left {
+        font-family: "Mart Light";
+        font-size: 1.875rem;
+    }
+
+    .footer .footer__bottom .container .container__footer .footer__bottom--left .footer__bottom__text {
+        font-family: "Roboto Light";
+        font-size: 1.125rem
+    }
+
+    .footer__bottom--left a {
+        text-decoration: underline;
+        font-size: 1.125rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer .footer__bottom .title_footer {
+        padding-top: 0;
+    }
+}
+
+.scrollup {
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    /*display: none;*/
+    text-indent: -999px;
+    background: url("../images/148.970.png") no-repeat;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 830px) {
+    .scrollup {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+.center-pic {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .center-pic {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+}
